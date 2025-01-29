@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Donde Curso - UNAHUR",
   description:
-    "Web independiente para encontrar tu aula en la Universidad Nacional de Hurlingham",
+    "Web independiente para encontrar tu aula en la Universidad Nacional de Hurlingham.",
 };
 
 export default function RootLayout({
