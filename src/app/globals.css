@@ -2,20 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-white: #adbac7;
+  --color-link: #539bf5;
+  --color-border: #444c56;
+  --color-text: #adbac7;
+  --color-red: #ea5c53;
+
+  --blue-50: #ecfdff;
+  --blue-100: #cff8fe;
+  --blue-200: #a5effc;
+  --blue-300: #67e1f9;
+  --blue-400: #22c9ee;
+  --blue-500: #06a3c9;
+  --blue-600: #0889b2;
+  --blue-700: #0e6e90;
+  --blue-800: #155975;
+  --blue-900: #164a63;
+  --blue-950: #083044;
+
+  --green-50: #f4faeb;
+  --green-100: #e4f4d3;
+  --green-200: #caeaac;
+  --green-300: #a8db7b;
+  --green-400: #89c952;
+  --green-500: #609e2f;
+  --green-600: #518a26;
+  --green-700: #3f6a21;
+  --green-800: #34551f;
+  --green-900: #2e491e;
+  --green-950: #16270c;
+
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-200: hsl(200, 23%, 97%);
+  --neutral-300: hsl(200, 12%, 95%);
+  --neutral-400: hsl(205, 12%, 88%);
+  --neutral-500: hsl(209, 13%, 83%);
+  --neutral-600: hsl(208, 6%, 55%);
+  --neutral-700: hsl(210, 8%, 31%);
+  --neutral-800: hsl(212, 9%, 22%);
+  --neutral-900: hsl(210, 10%, 14%);
+
+  --dark-100: hsl(240, 4%, 9%);
+
+  --font-color: var(--neutral-800);
+  --action-color: var(--neutral-700);
+  --action-color-state: var(--neutral-900);
+  --background: var(--neutral-300);
+  --primary-background: var(--blue-300);
+  --neutral-background: var(--neutral-500);
+  --hover-background: var(--neutral-400);
+  --neutral-odd: var(--neutral-200);
+  --neutral-even: var(--neutral-100);
+  --hover-font-color: var(--neutral-800);
+  --scroll-tumb: var(--neutral-500);
+  --scroll-track: var(--neutral-600);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.darkmode {
+  --neutral-odd: var(--neutral-900);
+  --neutral-even: var(--neutral-800);
+  --hover-background: var(--neutral-700);
+  --font-color: var(--neutral-100);
+  --hover-font-color: var(--neutral-200);
+  --action-color: var(--neutral-200);
+  --action-color-state: var(--secondary-500);
+  --background: var(--dark-100);
+  --primary-background: var(--primary-500);
+  --neutral-background: var(--neutral-800);
+  --scroll-tumb: var(--neutral-600);
+  --scroll-track: var(--neutral-700);
 }
 
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 1rem;
+  background-color: var(--background);
+  color: var(--font-color);
+  font-family: "Onest Variable", sans-serif;
+  overflow-x: hidden;
 }
+
+html,body::-webkit-scrollbar {
+  width: 0.5rem;
+  background: var(--scroll-track);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-tumb);
+  border-radius: 1rem;
+} 
