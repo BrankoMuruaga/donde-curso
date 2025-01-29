@@ -109,8 +109,10 @@ git commit -m "Descripción de tus cambios"
    
 ---
 
-## Licencia
+## Licencia 
+
 Este proyecto está bajo la licencia MIT. Siéntete libre de usarlo, modificarlo y distribuirlo.
+
 ---
 ## Créditos
 **Inspiración:** Basado en la web oficial de la UNAHUR.
