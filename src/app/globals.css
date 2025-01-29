@@ -87,7 +87,7 @@ body {
   overflow-x: hidden;
 }
 
-html,body::-webkit-scrollbar {
+html::-webkit-scrollbar {
   width: 0.5rem;
   background: var(--scroll-track);
 }

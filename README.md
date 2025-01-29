@@ -72,14 +72,17 @@ Visita http://localhost:3000 en tu navegador.
 ## Estructura del proyecto
 ```
 donde-curso/
-├── public/            # Archivos estáticos (favicon, imágenes, etc.)
+├── public/            # Archivos estáticos
 ├── src/
+│   ├── app/
+│   │   ├── api/       # Endpoints de la API
+│   │   ├── lib/       # Funciones auxiliares
+│   │   └── search/    # Lógica de búsqueda
 │   ├── components/    # Componentes reutilizables de React
 │   ├── services/      # Lógica para consumir APIs
-│   ├── styles/        # Estilos globales y de Tailwind
-│   ├── pages/         # Rutas de la aplicación
+│   ├── icons/         # Iconos
 │   └── utils/         # Funciones auxiliares
-├── .env.local         # Variables de entorno
+├── .env               # Variables de entorno
 ├── next.config.js     # Configuración de Next.js
 ├── tailwind.config.js # Configuración de Tailwind CSS
 └── README.md          # Este archivo
