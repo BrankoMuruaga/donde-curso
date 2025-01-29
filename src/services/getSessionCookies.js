@@ -1,7 +1,8 @@
 import * as cheerio from "cheerio";
 
 export const getSessionCookies = async () => {
-  const endpoint = process.env.ENDPOINT_DONDECURSO;
+  const endpoint =
+    "http://dondecurso.unahur.edu.ar/reservas2k/web/classroom_horary.php";
 
   const response = await fetch(endpoint);
   const html = await response.text();

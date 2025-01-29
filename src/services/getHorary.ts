@@ -1,7 +1,7 @@
 import { extraerHorariosDeHTML } from "@lib/utils";
 
 export const fetchHorary = async (cookies: string, body: string) => {
-  const endpoint = // No trae la variable de entorno pero en getSessionCookies.js sí
+  const endpoint =
     "http://dondecurso.unahur.edu.ar/reservas2k/web/classroom_horary.php";
 
   const html = await fetch(endpoint, {
